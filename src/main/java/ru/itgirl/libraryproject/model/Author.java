@@ -6,7 +6,8 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.Set;
+import java.util.List;
+
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -26,5 +27,5 @@ public class Author {
     private String surname;
 
     @ManyToMany(mappedBy = "authors")
-    private Set<Book> books;
+    private List<Book> books;
 }
